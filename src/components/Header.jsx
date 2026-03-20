@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -23,7 +24,7 @@ const Header = () => {
         <div className="container">
           <div className="flex space-x-2 items-center">
             <h1 className="text-3xl font-nephilmitalic text-secondary">
-              <a href="/">Handflow</a>
+              <Link to="/">Handflow</Link>
             </h1>
             <div className="container flex items-center px-20 space-x-20 font-tommymedium">
               <DropdownMenu
@@ -31,7 +32,7 @@ const Header = () => {
                 onOpenChange={setIsDropdownOpen}
               >
                 <DropdownMenuTrigger asChild>
-                  <a
+                  <div
                     className="flex items-center space-x-1 hover:cursor-pointer hover:underline uppercase hover:text-secondary"
                     onClick={toggleDropdown}
                   >
@@ -41,29 +42,29 @@ const Header = () => {
                         isDropdownOpen ? "rotate-180" : "rotate-0"
                       }`}
                     />
-                  </a>
+                  </div>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-white font-tommymedium capitalize">
                   <DropdownMenuItem className="hover:bg-gray-200 cursor-pointer">
-                    <a href="/team">Our team</a>
+                    <Link to="/team" className="w-full">Our team</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="hover:bg-gray-200 cursor-pointer">
-                    <a href="/mission">Our mission</a>
+                    <Link to="/mission" className="w-full">Our mission</Link>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-              <a
-                href="/practice"
+              <Link
+                to="/practice"
                 className="space-x-1 hover:cursor-pointer hover:underline uppercase hover:text-secondary"
               >
                 Practice
-              </a>
-              <a
-                href="/learn"
+              </Link>
+              <Link
+                to="/learn"
                 className="space-x-1 hover:cursor-pointer hover:underline uppercase hover:text-secondary"
               >
                 Learn
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -9,19 +9,17 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/mission" element={<Mission />} />
-          <Route path="/practice" element={<Practice />} />
-          <Route path="/learn" element={<Learn />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/mission" element={<Mission />} />
+        <Route path="/practice" element={<Practice />} />
+        <Route path="/learn" element={<Learn />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 
