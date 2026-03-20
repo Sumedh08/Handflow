@@ -17,13 +17,13 @@ const Footer = () => {
         <div className="flex justify-center items-center space-x-1">
           <Mail size={"16px"} />
           <p className="font-freightmedium">
-            <a href="mailto:girishkanna715@gmail.com">Girish</a>
+            <a href="mailto:sumedhris@gmail.com">Sumedh</a>
           </p>
         </div>
         <div className="flex justify-center items-center space-x-1">
           <Mail size={"16px"} />
           <p className="font-freightmedium">
-            <a href="mailto:sumedhris@gmail.com">Sumedh</a>
+            <a href="mailto:girishkanna715@gmail.com">Girish</a>
           </p>
         </div>
       </div>

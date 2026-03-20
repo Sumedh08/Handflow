@@ -32,23 +32,6 @@ const Team = () => {
           <div>
             <div className="rounded-full shadow-2xl hover:scale-105 transition-all">
               <img
-                src="Assets/suji.jpg"
-                alt="Suji"
-                className="h-[250px] w-[250px] object-cover sm:rounded-full"
-              />
-            </div>
-            <div>
-              <h2 className="flex pt-4 text-2xl font-freightmedium font-bold tracking-widest uppercase justify-center">
-                P. Sujith
-              </h2>
-              <p className="flex justify-center font-tommymedium text-secondary uppercase">
-                22BPS1193
-              </p>
-            </div>
-          </div>
-          <div>
-            <div className="rounded-full shadow-2xl hover:scale-105 transition-all">
-              <img
                 src="Assets/sumedh.jpg"
                 alt="Sumedh"
                 className="h-[250px] w-[250px] object-cover sm:rounded-full"
@@ -60,6 +43,23 @@ const Team = () => {
               </h2>
               <p className="flex justify-center font-tommymedium text-secondary uppercase">
                 22BPS1030
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="rounded-full shadow-2xl hover:scale-105 transition-all">
+              <img
+                src="Assets/suji.jpg"
+                alt="Suji"
+                className="h-[250px] w-[250px] object-cover sm:rounded-full"
+              />
+            </div>
+            <div>
+              <h2 className="flex pt-4 text-2xl font-freightmedium font-bold tracking-widest uppercase justify-center">
+                P. Sujith
+              </h2>
+              <p className="flex justify-center font-tommymedium text-secondary uppercase">
+                22BPS1193
               </p>
             </div>
           </div>
