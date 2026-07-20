@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
@@ -22,11 +23,11 @@ const Home = () => {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <a href="/practice">
+                <Link to="/practice">
                   <Button variant="secondary" className="text-white">
                     Start Practicing
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
             <img
@@ -117,11 +118,11 @@ const Home = () => {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <a href="/mission">
+              <Link to="/mission">
                 <Button variant="secondary" className="text-white">
                   View Our Mission
                 </Button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -140,11 +141,11 @@ const Home = () => {
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
-            <a href="team">
+            <Link to="/team">
               <Button variant="secondary" className="text-white">
                 Our Team
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
