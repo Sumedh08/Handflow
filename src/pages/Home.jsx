@@ -115,7 +115,7 @@ const Home = () => {
               <p className="py-2 max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Our platform allows you to learn sign language on your own
                 schedule, with the freedom to revisit lessons and practice
-                whenever it's convenient for you.
+                whenever it&apos;s convenient for you.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -132,12 +132,12 @@ const Home = () => {
         <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-              Psst... Learn it, it's Free!
+              Psst... Learn it, it&apos;s Free!
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Explore our resources and start your journey today without any
-              cost. Whether you're brushing up on your skills or starting from
-              scratch, we've got you covered. Dive in and make the most of our
+              cost. Whether you&apos;re brushing up on your skills or starting from
+              scratch, we&apos;ve got you covered. Dive in and make the most of our
               free learning materials!
             </p>
           </div>
