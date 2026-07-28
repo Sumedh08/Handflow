@@ -1,8 +1,6 @@
-import React from "react";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -11,6 +9,8 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 const Mission = () => {
+  const assetPath = (file) => `${import.meta.env.BASE_URL}${file}`;
+
   return (
     <>
       <main className="flex-1">
@@ -58,7 +58,7 @@ const Mission = () => {
             </Card>
             <Card className="max-w-[600px] rounded-3xl shadow-lg">
               <img
-                src="Assets/mission_illus.jpg"
+                src={assetPath("Assets/mission_illus.jpg")}
                 alt="Mission Illustration"
                 className="rounded-t-3xl"
               />

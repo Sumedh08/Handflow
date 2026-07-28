@@ -1,10 +1,11 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 const Home = () => {
+  const assetPath = (file) => `${import.meta.env.BASE_URL}${file}`;
+
   return (
     <main className="flex-1">
       <section className="w-full py-12 md:py-24 lg:py-32">
@@ -23,15 +24,15 @@ const Home = () => {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Link to="/practice">
-                  <Button variant="secondary" className="text-white">
+                <Button asChild variant="secondary" className="text-white">
+                  <Link to="/practice">
                     Start Practicing
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </div>
             </div>
             <img
-              src=" Assets/hand.gif"
+              src={assetPath("Assets/hand.gif")}
               width="550"
               height="550"
               alt="Hero"
@@ -94,13 +95,13 @@ const Home = () => {
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
           <img
-            src="Assets/hand7.gif"
+            src={assetPath("Assets/hand7.gif")}
             alt="Image"
             className="mx-auto aspect-square overflow-hidden rounded-xl object-scale-down sm:w-full lg:order-last"
           />
           <div className="flex flex-col justify-center space-y-4">
             <div>
-              <div className="inline-block py-2 rounded-lg bg-mutedpx-3 text-sm">
+              <div className="inline-block rounded-lg bg-muted px-3 py-2 text-sm">
                 <Badge variant="secondary" className="text-white">
                   Flexible Learning
                 </Badge>
@@ -118,11 +119,11 @@ const Home = () => {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Link to="/mission">
-                <Button variant="secondary" className="text-white">
+              <Button asChild variant="secondary" className="text-white">
+                <Link to="/mission">
                   View Our Mission
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -141,11 +142,11 @@ const Home = () => {
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
-            <Link to="/team">
-              <Button variant="secondary" className="text-white">
+            <Button asChild variant="secondary" className="text-white">
+              <Link to="/team">
                 Our Team
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>

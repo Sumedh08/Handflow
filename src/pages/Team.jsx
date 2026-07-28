@@ -1,7 +1,8 @@
 import { Card } from "@/components/ui/card";
-import React from "react";
 
 const Team = () => {
+  const assetPath = (file) => `${import.meta.env.BASE_URL}${file}`;
+
   return (
     <>
       <Card className="container mt-8 hover:shadow-2xl transition-all duration-150">
@@ -15,7 +16,7 @@ const Team = () => {
           <div>
             <div className="rounded-full shadow-2xl hover:scale-105 transition-all">
               <img
-                src="Assets/giri.jpg"
+                src={assetPath("Assets/giri.jpg")}
                 alt="Giri"
                 className="h-[250px] w-[250px] object-cover sm:rounded-full"
               />
@@ -32,7 +33,7 @@ const Team = () => {
           <div>
             <div className="rounded-full shadow-2xl hover:scale-105 transition-all">
               <img
-                src="Assets/sumedh.jpg"
+                src={assetPath("Assets/sumedh.jpg")}
                 alt="Sumedh"
                 className="h-[250px] w-[250px] object-cover sm:rounded-full"
               />
@@ -49,7 +50,7 @@ const Team = () => {
           <div>
             <div className="rounded-full shadow-2xl hover:scale-105 transition-all">
               <img
-                src="Assets/suji.jpg"
+                src={assetPath("Assets/suji.jpg")}
                 alt="Suji"
                 className="h-[250px] w-[250px] object-cover sm:rounded-full"
               />
