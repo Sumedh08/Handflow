@@ -141,13 +141,6 @@ const Home = () => {
               free learning materials!
             </p>
           </div>
-          <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
-            <Button asChild variant="secondary" className="text-white">
-              <Link to="/team">
-                Our Team
-              </Link>
-            </Button>
-          </div>
         </div>
       </section>
     </main>

@@ -43,9 +43,6 @@ const Header = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-white font-tommymedium capitalize">
                   <DropdownMenuItem className="hover:bg-gray-200 cursor-pointer">
-                    <Link to="/team" className="w-full">Our team</Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="hover:bg-gray-200 cursor-pointer">
                     <Link to="/mission" className="w-full">Our mission</Link>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
